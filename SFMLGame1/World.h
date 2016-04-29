@@ -3,7 +3,7 @@
 #include <array>
 #include "SFML/System.hpp"
 #include "SFML/Graphics.hpp"
-#include "Textures.h"
+#include "ResourceIdentifiers.h"
 #include "SceneNode.h"
 #include "Aircraft.h"
 #include "CommandQueue.h"

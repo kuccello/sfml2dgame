@@ -1,5 +1,7 @@
 #pragma once
 
+#include "Resources.h"
+
 // Forward declaration of SFML classes
 namespace sf
 {

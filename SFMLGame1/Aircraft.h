@@ -2,7 +2,7 @@
 
 #include "SFML/Graphics.hpp"
 #include "Entity.h"
-#include "Textures.h"
+#include "ResourceIdentifiers.h"
 
 class Aircraft : public Entity
 {
