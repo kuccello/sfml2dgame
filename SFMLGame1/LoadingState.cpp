@@ -27,7 +27,6 @@ LoadingState::LoadingState(StateStack& stack, Context context)
 	mProgressBar.setPosition(10, mLoadingText.getPosition().y + 40);
 
 	setCompletion(0.f);
-
 	mLoadingTask.execute();
 }
 
