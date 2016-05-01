@@ -6,6 +6,7 @@
 #include <stdexcept>
 #include <cassert>
 
+#include "ResourceIdentifiers.h"
 
 template <typename Resource, typename Identifier>
 class ResourceHolder

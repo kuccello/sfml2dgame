@@ -8,6 +8,7 @@ namespace States
 		Title,
 		Menu,
 		Game,
+		GameOver,
 		Loading,
 		Pause,
 		Settings,

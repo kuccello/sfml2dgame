@@ -17,7 +17,16 @@ public:
 		MoveRight,
 		MoveUp,
 		MoveDown,
+		Fire,
+		LaunchMissile,
 		ActionCount
+	};
+
+	enum MissionStatus
+	{
+		MissionRunning,
+		MissionSuccess,
+		MissionFailure
 	};
 
 
@@ -30,6 +39,9 @@ public:
 	void					assignKey(Action action, sf::Keyboard::Key key);
 	sf::Keyboard::Key		getAssignedKey(Action action) const;
 
+	void 					setMissionStatus(MissionStatus status);
+	MissionStatus 			getMissionStatus() const;
+
 
 private:
 	void					initializeActions();
@@ -39,4 +51,5 @@ private:
 private:
 	std::map<sf::Keyboard::Key, Action>		mKeyBinding;
 	std::map<Action, Command>				mActionBinding;
+	MissionStatus 							mCurrentMissionStatus;
 };
